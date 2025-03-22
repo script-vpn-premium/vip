@@ -1,6 +1,6 @@
 ### Update akan datang
 ```
-wget https://raw.githubusercontent.com/Riswan481/VVIP/main/files/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/script-vpn-premium/vip/main/files/update.sh && chmod +x update.sh && ./update.sh
 ```
 # UP REPO DEBIAN
 <pre><code>apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot</code></pre>
