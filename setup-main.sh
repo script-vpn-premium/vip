@@ -28,9 +28,16 @@ export IP=$( curl -sS icanhazip.com )
 clear
 clear && clear && clear
 clear;clear;clear
-echo -e "${YELLOW}----------------------------------------------------------${NC}"
+echo -e "${YELLOW}==========================================================${NC}"
 echo -e "\033[96;1m  SELAMAT DATANG DI SCRIPT KAMI\033[0m"
-echo -e "${YELLOW}----------------------------------------------------------${NC}"
+echo -e "${YELLOW}==========================================================${NC}"
+echo ""
+echo -e "\033[92;1m==========================================================\033[0m"
+echo -e "\033[92;1m Terima kasih telah menggunakan script kami.               \033[0m"
+echo -e "\033[92;1m Semoga hari Anda menyenangkan dan segala urusan Anda      \033[0m"
+echo -e "\033[92;1m dipermudah Jika ada kendala, jangan ragu untuk                                             \033[0m"
+echo -e "\033[92;1m  menghubungi kami admin @JesVpnt    \033[0m"
+echo -e "\033[92;1m==========================================================\033[0m"
 echo ""
 sleep 3
 clear
