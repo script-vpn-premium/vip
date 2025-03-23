@@ -1,5 +1,5 @@
 # Decrypted by WV | FUSCATOR
-# Github- https://github.com/bowowiwendi/Absurd
+# Github- https://github.com/script-vpn-premium/vip
 
 cd /usr/local/
 rm -rf sbin
