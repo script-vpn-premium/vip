@@ -29,7 +29,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}==========================================================${NC}"
-echo -e "\033[96;1m  SELAMAT DATANG DI SCRIPT KAMI\033[0m"
+echo -e "\033[96;1m  SELAMAT DATANG DI SCRIPT PREMIUM KAMI\033[0m"
 echo -e "${YELLOW}==========================================================${NC}"
 echo ""
 echo -e "\033[92;1m==========================================================\033[0m"
@@ -131,9 +131,9 @@ function print_ok() {
 echo -e "${OK} ${BLUE} $1 ${FONT}"
 }
 function print_install() {
-echo -e "${green} =============================== ${FONT}"
+echo -e "${green} ========================================================== ${FONT}"
 echo -e "${YELLOW} # $1 ${FONT}"
-echo -e "${green} =============================== ${FONT}"
+echo -e "${green} ========================================================== ${FONT}"
 sleep 1
 }
 function print_error() {
@@ -141,9 +141,9 @@ echo -e "${EROR} ${REDBG} $1 ${FONT}"
 }
 function print_success() {
 if [[ 0 -eq $? ]]; then
-echo -e "${green} =============================== ${FONT}"
+echo -e "${green} ========================================================== ${FONT}"
 echo -e "${Green} # $1 berhasil dipasang"
-echo -e "${green} =============================== ${FONT}"
+echo -e "${green}========================================================== ${FONT}"
 sleep 2
 fi
 }
@@ -255,9 +255,9 @@ clear
 function pasang_domain() {
 echo -e ""
 clear
-echo -e "===================================================="
+echo -e "${YELLOW}==========================================================${NC}"
 echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[0m|"
-echo -e "===================================================="
+echo -e "${YELLOW}==========================================================${NC}"
 echo -e "     \e[1;32m1)\e[0m Your Domain"
 echo -e "     \e[1;32m2)\e[0m Random Domain "
 echo -e "===================================================="
@@ -267,7 +267,7 @@ if [[ $host == "1" ]]; then
 echo -e "\e[1;32m====================================================$NC"
 echo -e "\e[1;36m     INPUT SUBDOMAIN $NC"
 echo -e "\e[1;32m====================================================$NC"
-echo -e "\033[91;1m contoh subdomain :\033[0m \033[93 wendi.ssh.cloud\033[0m"
+echo -e "\033[91;1m contoh subdomain :\033[0m \033[93 Jess.rasiya.cloud\033[0m"
 read -p "SUBDOMAIN :  " host1
 echo "IP=" >> /var/lib/kyt/ipvps.conf
 echo $host1 > /etc/xray/domain
@@ -876,7 +876,7 @@ sleep 2
 clear
 echo -e ""
 echo -e "\033[96m====================================================\033[0m"
-echo -e "\033[92m                  INSTALL SUCCES\033[0m"
+echo -e "\033[92m            INSTALL SUCCES REBOOT OTOMATIS\033[0m"
 echo -e "\033[96m====================================================\033[0m"
 echo -e ""
 reboot
