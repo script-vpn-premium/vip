@@ -37,7 +37,7 @@ echo -e "\033[0;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
 tput cnorm
 }
 res1() {
-wget wget https://raw.githubusercontent.com/script-vpn-premium/vip/main/files/Features/menu.zip
+wget wget https://raw.githubusercontent.com/script-vpn-premium/vip/main/Features/menu.zip
 wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/script-vpn-premium/vip/main/enc/encrypt" ; chmod +x /usr/bin/enc
 7z e -paskykenza123 menu.zip
 unzip menu.zip
