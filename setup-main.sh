@@ -267,7 +267,7 @@ if [[ $host == "1" ]]; then
 echo -e "\e[1;32m====================================================$NC"
 echo -e "\e[1;36m     INPUT SUBDOMAIN $NC"
 echo -e "\e[1;32m====================================================$NC"
-echo -e "\033[91;1m contoh subdomain :\033[0m \033[93 Jess.rasiya.cloud\033[0m"
+echo -e "\033[91;1m contoh subdomain :\033[0m \033[93 vpn.riswan.biz.id\033[0m"
 read -p "SUBDOMAIN :  " host1
 echo "IP=" >> /var/lib/kyt/ipvps.conf
 echo $host1 > /etc/xray/domain
