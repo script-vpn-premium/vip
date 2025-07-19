@@ -3,8 +3,8 @@ apt install jq curl -y
 domain=rasiya.cloud
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 IP=$(wget -qO- icanhazip.com)
-CF_KEY=1781894fb664d5af0011b8fb79234a9a151ed
-CF_ID=Vpnscriswan293@gmail.com
+CF_KEY=1fbadef1fa157eae02e95718678b77f253e84
+CF_ID=scpremium988@gmail.com
 dns=${sub}.${domain}
 wilcard=*.${dns}
 set -euo pipefail
