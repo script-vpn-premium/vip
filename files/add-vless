@@ -1,0 +1,19 @@
+#!/bin/bash
+# /etc/xray/add-vless
+
+user=$2
+days=$4
+uuid=$(cat /proc/sys/kernel/random/uuid)
+exp=$(date -d "$days days" +"%Y-%m-%d")
+
+sed -i "/#vless$/a\### $user $exp\n},{\"id\": \"$uuid\",\"email\": \"$user\"}" /etc/xray/config.json
+echo "### $user $exp" >> /etc/vless/.vless.db
+
+domain=$(cat /etc/xray/domain)
+port=443
+path="/vless"
+encryption="none"
+
+link="vless://${uuid}@${domain}:${port}?encryption=${encryption}&type=ws&path=${path}&host=${domain}&tls=1#${user}"
+echo "$link"
+systemctl restart xray
