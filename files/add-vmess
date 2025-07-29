@@ -1,18 +1,14 @@
+sudo mkdir -p /etc/xray
+sudo tee /etc/xray/add-vmess > /dev/null <<'EOF'
 #!/bin/bash
-# /etc/xray/add-vmess
-
 user=$2
 days=$4
 uuid=$(cat /proc/sys/kernel/random/uuid)
 exp=$(date -d "$days days" +"%Y-%m-%d")
 
-# Tambahkan user ke config.json
 sed -i "/#vmess$/a\### $user $exp\n},{\"id\": \"$uuid\",\"alterId\": 0,\"email\": \"$user\"}" /etc/xray/config.json
-
-# Simpan ke database manual (optional)
 echo "### $user $exp" >> /etc/vmess/.vmess.db
 
-# Buat config link
 domain=$(cat /etc/xray/domain)
 port=443
 path="/vmess"
@@ -35,3 +31,6 @@ config=$(echo -n "{
 
 echo "vmess://$config"
 systemctl restart xray
+EOF
+
+sudo chmod +x /etc/xray/add-vmess
