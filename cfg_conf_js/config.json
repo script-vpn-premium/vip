@@ -33,7 +33,7 @@
       "settings": {
         "address": "127.0.0.1"
       },
-      "tag": "api"
+      "tag": "api"  // tag ini sesuai dengan `api.tag`
     },
     {
       "listen": "127.0.0.1",
@@ -162,6 +162,11 @@
       "protocol": "blackhole",
       "settings": {},
       "tag": "blocked"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {},
+      "tag": "api"  // outboundTag untuk API
     }
   ],
   "routing": {
@@ -183,7 +188,7 @@
       },
       {
         "type": "field",
-        "outboundTag": "reject",
+        "outboundTag": "blocked",
         "domain": ["geosite:category-ads-all"]
       },
       {
